@@ -1,0 +1,31 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: search
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9300
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+
+
+hbase.zookeeper.quorum: 10.0.0.19
+hbase.zookeeper.port: 2181
+
+mykafka:
+  producter:
+    nodes: localhost:9092
+    retries: 0
+    batchSize: 4096
+    lingerMs: 1
+    bufferMemory: 40960
+  consumer:
+    bootstrapServers: localhost:9092
+    enableAutoCommit: false
+    autoCommitIntervalMs: 100
+    sessionTimeoutMs: 15000
+    groupId: test_group
+    autoOffsetReset: latest
