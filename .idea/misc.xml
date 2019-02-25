@@ -5,7 +5,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/server-classify/pom.xml" />
+=======
         <option value="$PROJECT_DIR$/server_search/pom.xml" />
+>>>>>>> e6af3231932b83324192f091cb7f597dfb403ff4
       </list>
     </option>
   </component>

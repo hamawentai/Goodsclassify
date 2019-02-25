@@ -1,7 +1,6 @@
 package com.lab.server_search.document;
 
 import lombok.Data;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;

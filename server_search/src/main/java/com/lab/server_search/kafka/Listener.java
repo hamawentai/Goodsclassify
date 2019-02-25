@@ -2,7 +2,7 @@ package com.lab.server_search.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
- 
+
 import java.util.Optional;
  
 //public class Listener {

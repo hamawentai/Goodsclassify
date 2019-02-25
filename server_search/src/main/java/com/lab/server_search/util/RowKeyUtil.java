@@ -1,6 +1,5 @@
 package com.lab.server_search.util;
 
-import java.util.Date;
 import java.util.UUID;
 
 public class RowKeyUtil {
