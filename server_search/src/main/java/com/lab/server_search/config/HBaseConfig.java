@@ -6,8 +6,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.hadoop.hbase.HbaseTemplate;
 
+/**
+ * zookeeper配置
+ */
 @Configuration
-public class HbaseConfig {
+public class HBaseConfig {
 
     @Bean
     public HbaseTemplate hbaseTemplate(@Value("${hbase.zookeeper.quorum}") String quorum,

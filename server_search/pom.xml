@@ -44,21 +44,6 @@
             <version>1.4.0</version>
         </dependency>
 
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.hbase/hbase-server &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.hbase</groupId>-->
-            <!--<artifactId>hbase-server</artifactId>-->
-            <!--<version>1.4.0</version>-->
-        <!--</dependency>-->
-
-        <!--&lt;!&ndash; https://mvnrepository.com/artifact/org.apache.hbase/hbase-common &ndash;&gt;-->
-        <!--<dependency>-->
-            <!--<groupId>org.apache.hbase</groupId>-->
-            <!--<artifactId>hbase-common</artifactId>-->
-            <!--<version>1.4.0</version>-->
-        <!--</dependency>-->
-
-
         <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-hadoop -->
         <dependency>
             <groupId>org.springframework.data</groupId>

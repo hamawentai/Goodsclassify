@@ -1,7 +1,6 @@
 package com.lab.server_search.service.impl;
 
 import com.lab.server_search.document.Doc;
-import com.lab.server_search.service.DocSearchService;
 import com.lab.server_search.service.HbaseService;
 import com.lab.server_search.util.HBaseDoc;
 import org.apache.commons.io.FileUtils;
@@ -29,9 +28,6 @@ public class HbaseServiceImpl implements HbaseService {
 
     @Autowired
     private HbaseTemplate hbaseTemplate;
-
-    @Autowired
-    private DocSearchService docSearchService;
 
     /**
      * 通过表名，开始行键和结束行键获取数据
@@ -87,7 +83,6 @@ public class HbaseServiceImpl implements HbaseService {
                     put.addColumn(Bytes.toBytes(HBaseDoc.COLUMNFAMILY_1), Bytes.toBytes(HBaseDoc.COLUMNFAMILY_1_DESCRIBE), Bytes.toBytes(doc.getDescribe()));
                     put.addColumn(Bytes.toBytes(HBaseDoc.COLUMNFAMILY_1), Bytes.toBytes(HBaseDoc.COLUMNFAMILY_1_TITLE), Bytes.toBytes(doc.getTitle()));
                     puts.add(put);
-                    docSearchService.addDoc(doc);
                 }
                 hTableInterface.put(puts);
                 return null;
