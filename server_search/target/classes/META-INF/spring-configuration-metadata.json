@@ -1,0 +1,87 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.lab.server_search.config.PageSizeConfig",
+      "name": "my-page",
+      "type": "com.lab.server_search.config.PageSizeConfig"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ConsumerProperties",
+      "name": "mykafka.consumer",
+      "type": "com.lab.server_search.kafka.config.ConsumerProperties"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ProducerProperties",
+      "name": "mykafka.producter",
+      "type": "com.lab.server_search.kafka.config.ProducerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.lab.server_search.config.PageSizeConfig",
+      "name": "my-page.page",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.lab.server_search.config.PageSizeConfig",
+      "name": "my-page.size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ConsumerProperties",
+      "name": "mykafka.consumer.auto-commit-interval-ms",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ConsumerProperties",
+      "name": "mykafka.consumer.auto-offset-reset",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ConsumerProperties",
+      "name": "mykafka.consumer.bootstrap-servers",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ConsumerProperties",
+      "name": "mykafka.consumer.enable-auto-commit",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ConsumerProperties",
+      "name": "mykafka.consumer.group-id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ConsumerProperties",
+      "name": "mykafka.consumer.session-timeout-ms",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ProducerProperties",
+      "name": "mykafka.producter.batch-size",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ProducerProperties",
+      "name": "mykafka.producter.buffer-memory",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ProducerProperties",
+      "name": "mykafka.producter.linger-ms",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ProducerProperties",
+      "name": "mykafka.producter.nodes",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.lab.server_search.kafka.config.ProducerProperties",
+      "name": "mykafka.producter.retries",
+      "type": "java.lang.Integer"
+    }
+  ]
+}

@@ -4,7 +4,9 @@ import com.lab.server_search.ao.CommoditySearchAO;
 import com.lab.server_search.config.PageSizeConfig;
 import com.lab.server_search.myEnum.SearchEnum;
 import com.lab.server_search.service.GoodsService;
+import com.lab.server_search.service.LabelService;
 import com.lab.server_search.vo.CommoditySearchVO;
+import com.lab.server_search.vo.LabelVO;
 import com.lab.server_search.vo.ResultVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -24,6 +26,9 @@ public class SearchController {
     @Autowired
     private PageSizeConfig pageSizeConfig;
 
+    @Autowired
+    private LabelService labelService;
+
     /**
      * 按商品名称搜索
      * @param commoditySearchAO
@@ -40,5 +45,14 @@ public class SearchController {
                     pageSizeConfig.getSize(),label);
         }
         return null;
+    }
+
+    /**
+     * 获取所有一级分类
+     * @return
+     */
+    @GetMapping("/labels")
+    public List<LabelVO> getAllLabel() {
+        return labelService.findAllLabels();
     }
 }
