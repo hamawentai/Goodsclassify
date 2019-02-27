@@ -5,13 +5,14 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import java.io.Serializable;
 
 /**
- * 分类实体类
+ * 一级分类实体类
  */
 @Data
 @Entity
-public class Label {
+public class Label implements Serializable {
 
     @Id
     @GeneratedValue
