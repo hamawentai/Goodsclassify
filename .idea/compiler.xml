@@ -6,17 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="server_search" />
+        <module name="goods-classify" />
         <module name="server-classify" />
-        <module name="Goodsclassify" />
-        <module name="goodsclassify" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="goodsclassify" target="1.8" />
+      <module name="server_search" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Goodsclassify" options="-parameters" />
-      <module name="goodsclassify" options="-parameters" />
+      <module name="goods-classify" options="-parameters" />
       <module name="server-classify" options="-parameters" />
       <module name="server_search" options="-parameters" />
     </option>

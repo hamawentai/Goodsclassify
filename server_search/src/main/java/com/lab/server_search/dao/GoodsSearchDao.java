@@ -1,6 +1,6 @@
 package com.lab.server_search.dao;
 
-import com.lab.server_search.domain.Goods;
+import com.lab.server_search.document.Goods;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
@@ -14,7 +14,5 @@ public interface GoodsSearchDao extends ElasticsearchRepository<Goods,String> {
      * @param pageable
      * @return
      */
-    Page<Goods> findByLabelOrDescribeLike(String label, String describe, Pageable pageable);
-
-    void delete(Goods goods);
+    Page<Goods> findByLabelAndDescribeLike(String label, String describe, Pageable pageable);
 }
