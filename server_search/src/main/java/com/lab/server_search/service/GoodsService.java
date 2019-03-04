@@ -1,8 +1,6 @@
 package com.lab.server_search.service;
 
-import com.lab.server_search.domain.Goods;
-import com.lab.server_search.vo.CommoditySearchVO;
-import com.lab.server_search.vo.ResultVO;
+import com.lab.server_search.document.Goods;
 import org.springframework.data.domain.Page;
 
 import java.util.List;
@@ -12,14 +10,7 @@ import java.util.List;
  */
 public interface GoodsService {
 
-    /**
-     * 商品搜索
-     * @param keyword
-     * @param page
-     * @param size
-     * @return
-     */
-    ResultVO<CommoditySearchVO> commoditySearch(String keyword, int page, int size,List<String> label);
+    Page<Goods> search(String keyword,int page,int size);
 
     boolean addGood(List<Goods> goods);
 }
