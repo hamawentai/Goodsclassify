@@ -45,7 +45,6 @@ public class SnowflakeIdWorker {
     /** 上次生成ID的时间截 */
     private long lastTimestamp = -1L;
 
-    //==============================Constructors=====================================
     /**
      * 构造函数
      * @param workerId 工作ID (0~31)
@@ -62,7 +61,6 @@ public class SnowflakeIdWorker {
         this.datacenterId = datacenterId;
     }
 
-    // ==============================Methods==========================================
     /**
      * 获得下一个ID (该方法是线程安全的)
      * @return SnowflakeId

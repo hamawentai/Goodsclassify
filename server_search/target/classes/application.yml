@@ -19,8 +19,9 @@ spring:
     show-sql: true
   redis:
     host: localhost
+    password: 123456
 
-hbase.zookeeper.quorum: 10.0.0.19
+hbase.zookeeper.quorum: wx,twl
 hbase.zookeeper.port: 2181
 
 mykafka:

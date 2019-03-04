@@ -1,13 +1,14 @@
 package com.lab.server_search.service;
 
-import com.lab.server_search.document.Doc;
+import com.lab.server_search.domain.GoodsLabel;
 
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
 /**
- * hbase操作类接口
+ *
+ * hbase的goodslabel表操作类接口
  */
 public interface HbaseService {
 
@@ -20,7 +21,15 @@ public interface HbaseService {
      */
     List<Map<String,Object>> find(String tableName , String startRow, String stopRow);
 
-    Boolean insert(List<Doc> docList,String tableName);
+    Boolean insert(List<GoodsLabel> docList, String tableName);
 
-    List<Doc> getDocs() throws IOException;
+    List<GoodsLabel> getDocs() throws IOException;
+
+    /**
+     * 根据rowkey查找数据
+     * @param rowKeyList
+     * @param tableName
+     * @return
+     */
+    List<GoodsLabel> findByRowKeyList(List<String> rowKeyList,String tableName);
 }
