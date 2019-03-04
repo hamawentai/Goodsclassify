@@ -1,3 +1,39 @@
 spring:
   thymeleaf:
     prefix: classpath:/templates/
+  kafka:
+    bootstrap-servers: wx:9092,twl:9092,zdp:9092
+    consumer:
+      group-id: server-classify
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: newdb
+
+
+
+wx:
+  security:
+    hdfs:
+      hdfsRoot: hdfs://wx:9000
+      defaultFS: wx:9000
+      uploadPath: upload
+    kafka:
+      bootstrapServers: wx:9092,twl:9092,zdp:9092
+    shell:
+      shellPath: /home/weixun/IdeaProjects/goods-classify/server-classify/src/main/resources/shell
+      url[0]: # test
+        shellName: ./redistribution.sh
+        mainClass: com.lab.analysis.PriceAnalysis
+        successUrl: http://wx:8888/shell?res=suc
+        failUrl: http://wx:8888/shell?res=error
+      url[1]: # python数据分类
+        shellName: ./run.sh
+        mainClass:
+        successUrl: http://wx:8888/shell?res=suc
+        failUrl: http://wx:8888/shell?res=error
+server:
+  port: 8888

@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class TimeUtils {
 
-    private static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd|HH-mm-ss-S");
+    private static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd|HH_mm_ss_S");
 
     public static String getNowTime() {
         return format.format(new Date());
