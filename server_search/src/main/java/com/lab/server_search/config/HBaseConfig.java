@@ -19,6 +19,7 @@ public class HBaseConfig {
         org.apache.hadoop.conf.Configuration conf = HBaseConfiguration.create();
         conf.set("hbase.zookeeper.quorum", quorum);
         conf.set("hbase.zookeeper.port", port);
+        conf.set("hbase.rootdir", "hdfs://wx:9000/hbase");
         hbaseTemplate.setConfiguration(conf);
         hbaseTemplate.setAutoFlush(true);
         return hbaseTemplate;

@@ -1,5 +1,8 @@
 package com.lab.server_search.service;
 
+/**
+ * 标签服务
+ */
 public interface CatalogService {
 
     /**
