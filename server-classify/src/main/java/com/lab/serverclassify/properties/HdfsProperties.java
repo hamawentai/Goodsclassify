@@ -15,4 +15,5 @@ public class HdfsProperties {
     private String hdfsRoot;
     private String defaultFS;
     private String uploadPath;
+    private String resultPath;
 }

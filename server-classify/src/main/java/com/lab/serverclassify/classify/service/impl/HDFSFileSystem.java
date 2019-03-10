@@ -1,4 +1,4 @@
-package com.lab.serverclassify.classify.serviceImpl;
+package com.lab.serverclassify.classify.service.impl;
 
 
 import com.lab.serverclassify.properties.HdfsProperties;
@@ -26,12 +26,22 @@ public class HDFSFileSystem {
     @Autowired
     private HdfsProperties hdfsProperties;
 
+    private Configuration conf;
+
+//    public HDFSFileSystem() {
+//        System.out.println("_------------+__________"+hdfsProperties.getDefaultFS());
+//        conf = new Configuration();
+//        conf.set("fs.defaultFS", hdfsProperties.getDefaultFS());
+//    }
+
 
     /**
      * 按路径上传文件到hdfs
      */
-    public void copyFile(Configuration conf, String uri, String local, String remote) throws IOException {
-        FileSystem fs = FileSystem.get(URI.create(uri), conf);
+    public void copyFile(String local, String remote) throws IOException {
+        conf = new Configuration();
+        conf.set("fs.defaultFS", hdfsProperties.getDefaultFS());
+        FileSystem fs = FileSystem.get(conf);
         fs.copyFromLocalFile(new Path(local), new Path(remote));
         log.info("copy from: " + local + " to " + remote);
         fs.close();
@@ -40,10 +50,11 @@ public class HDFSFileSystem {
     /**
      * 按路径下载hdfs上的文件
      */
-    public void download(Configuration conf, String uri, String remote, String local) throws IOException {
-        Path path = new Path(remote);
-        FileSystem fs = FileSystem.get(URI.create(uri), conf);
-        fs.copyToLocalFile(path, new Path(local));
+    public void download(String remote, String local) throws IOException {
+        conf = new Configuration();
+        conf.set("fs.defaultFS", hdfsProperties.getDefaultFS());
+        FileSystem fs = FileSystem.get(conf);
+        fs.copyToLocalFile(new Path(remote), new Path(local));
         log.info("download: from" + remote + " to " + local);
         fs.close();
     }
@@ -51,12 +62,12 @@ public class HDFSFileSystem {
     /**
      * File对象上传到hdfs
      */
-    public String createFile(InputStream in, String username, String filename) throws IOException {
+    public String createFile(InputStream in, String username, String filename, String kind) throws IOException {
+        conf = new Configuration();
+        conf.set("fs.defaultFS", hdfsProperties.getDefaultFS());
         String[] date = TimeUtils.getNowTime().split("\\|");
-        String hdfsPath = "/" + hdfsProperties.getUploadPath() + "/" + username + "/" + date[0] + "/" + filename + "_" + date[1];
+        String hdfsPath = "/" + kind + "/" + username + "/" + date[0] + "/" + filename + "_" + date[1];
         try {
-            Configuration conf = new Configuration();
-            conf.set("fs.defaultFS", hdfsProperties.getDefaultFS());
             FileSystem fileSystem = FileSystem.get(URI.create(hdfsPath), conf);
             FSDataOutputStream out = fileSystem.create(new Path(hdfsPath));
             IOUtils.copyBytes(in, out, 4096, false);

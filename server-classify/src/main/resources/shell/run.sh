@@ -5,6 +5,6 @@ workon ml
 python $path/predic.py $3 $4 $5
 res=$?
 if [[ ${res} == "0" ]];
-then curl $1;
-else curl $2;
+then wget -qO- $1;
+else wget -qO- $2;
 fi

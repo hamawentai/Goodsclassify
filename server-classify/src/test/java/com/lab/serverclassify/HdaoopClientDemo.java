@@ -14,24 +14,25 @@ public class HdaoopClientDemo {
     @Before
     public void init() throws Exception {
         Configuration conf = new Configuration();
-        conf.set("fs.defaultFS", "hdfs://10.0.0.36:9000");
-        System.setProperty("HADOOP_USER_NAME", "root");
+        conf.set("fs.defaultFS", "hdfs://wx:9000");
+        System.setProperty("hadoop.home.dir", "/home/hadoop/apps/hadoop/");
         fs = FileSystem.get(conf);
     }
 
     public void uploadFile() throws Exception {
-        fs.copyFromLocalFile(new Path("E:/C/dd.jpg"), new Path("/21.jpg"));
+        fs.copyFromLocalFile(new Path("server-classify/1.txt"), new Path("/3.txt"));
         fs.close();
     }
 
-    public static void main(String[] args) throws Exception{
+
+    public static void main(String[] args) throws Exception {
         HdaoopClientDemo hadoop = new HdaoopClientDemo();
         hadoop.init();
         hadoop.uploadFile();
     }
 
-    public void downloadFile() throws Exception{
-       fs.copyToLocalFile(new Path("/ee.jpg"), new Path("da.jpg"));
+    public void downloadFile() throws Exception {
+        fs.copyToLocalFile(new Path("/ee.jpg"), new Path("da.jpg"));
         FSDataInputStream fsdi = fs.open(new Path("/1.txt"));
         IOUtils.copy(fsdi, System.out);
     }

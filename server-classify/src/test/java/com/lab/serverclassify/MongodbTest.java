@@ -3,7 +3,7 @@ package com.lab.serverclassify;
 
 import com.lab.serverclassify.mongodb.repository.UserFilesAdvancedRepository;
 import com.lab.serverclassify.mongodb.repository.UserFilesRepository;
-import com.lab.serverclassify.pojo.dos.UserFilesDO;
+import com.lab.serverclassify.pojo.domain.UserFilesDO;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

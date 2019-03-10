@@ -12,7 +12,17 @@ spring:
       host: localhost
       port: 27017
       database: newdb
+    elasticsearch:
+      cluster-nodes: twl:9300
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://wx:3306/goods?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
 
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
 
 
 wx:
@@ -21,6 +31,7 @@ wx:
       hdfsRoot: hdfs://wx:9000
       defaultFS: wx:9000
       uploadPath: upload
+      resultPath: result
     kafka:
       bootstrapServers: wx:9092,twl:9092,zdp:9092
     shell:
@@ -35,5 +46,10 @@ wx:
         mainClass:
         successUrl: http://wx:8888/shell?res=suc
         failUrl: http://wx:8888/shell?res=error
+hbase:
+  zookeeper:
+    quorum: wx,twl
+    port: 2181
+  rootdir: hdfs://wx:9000/hbase
 server:
   port: 8888

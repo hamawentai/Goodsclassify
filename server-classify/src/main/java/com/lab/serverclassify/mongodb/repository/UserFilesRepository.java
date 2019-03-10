@@ -1,6 +1,6 @@
 package com.lab.serverclassify.mongodb.repository;
 
-import com.lab.serverclassify.pojo.dos.UserFilesDO;
+import com.lab.serverclassify.pojo.domain.UserFilesDO;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

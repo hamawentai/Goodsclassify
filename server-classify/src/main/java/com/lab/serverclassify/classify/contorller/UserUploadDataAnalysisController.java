@@ -1,9 +1,9 @@
 package com.lab.serverclassify.classify.contorller;
 
-import com.lab.serverclassify.classify.service.RunShellService;
-import com.lab.serverclassify.classify.serviceImpl.HDFSFileSystem;
-import com.lab.serverclassify.pojo.dto.ShellCommandsDTO;
+import com.lab.serverclassify.classify.service.UploadFileLogService;
+import com.lab.serverclassify.classify.service.impl.HDFSFileSystem;
 import com.lab.serverclassify.kafka.service.KafkaSenderService;
+import com.lab.serverclassify.pojo.dto.ShellCommandsDTO;
 import com.lab.serverclassify.properties.HdfsProperties;
 import com.lab.serverclassify.properties.ShellCallBackProperties;
 import com.lab.serverclassify.properties.ShellProperties;
@@ -40,7 +40,7 @@ public class UserUploadDataAnalysisController {
     private HDFSFileSystem hdfsFileSystem;
 
     @Autowired
-    private RunShellService runShellService;
+    private UploadFileLogService uploadFileLogService;
 
     @Autowired
     private KafkaSenderService<ShellCommandsDTO> kafkaShellCommandsSender;
@@ -76,13 +76,17 @@ public class UserUploadDataAnalysisController {
                     String filename = file.getOriginalFilename();
                     byte[] bytes = file.getBytes();
                     ByteArrayInputStream in = new ByteArrayInputStream(bytes);
-                    String hdfPath = hdfsFileSystem.createFile(in, username, filename);
+                    String hdfPath = hdfsFileSystem.createFile(in, username, filename, hdfsProperties.getUploadPath());
                     log.info(hdfPath);
                     commands.add(hdfPath);
                     commands.add(username);
+                    commands.add("1");
                     ShellCommandsDTO commandsDTO = new ShellCommandsDTO(shellName, shellPath, successUrl, failUrl, commands);
+                    log.info(commandsDTO.toString());
                     kafkaShellCommandsSender.sendMsg("shell", commandsDTO);
+                    uploadFileLogService.recordUploadFileLog(username, hdfPath);
                 } catch (Exception e) {
+                    e.printStackTrace();
                     return "You failed to upload " + i + " => " + e.getMessage();
                 }
             } else {

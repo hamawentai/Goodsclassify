@@ -1,4 +1,4 @@
-package com.lab.serverclassify.pojo.dos;
+package com.lab.serverclassify.pojo.domain;
 
 import lombok.Data;
 

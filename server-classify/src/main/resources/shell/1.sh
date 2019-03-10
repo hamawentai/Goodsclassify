@@ -8,7 +8,7 @@ ${spark_home}/bin/spark-submit \
 /home/weixun/IdeaProjects/data-analysis/out/artifacts/wx/wx.jar 
 res=$?
 if [[ ${res} == "0" ]]; 
-then curl $1; 
-else curl $2; 
+then wget -qO- $1; 
+else wget -qO- $2; 
 fi
 

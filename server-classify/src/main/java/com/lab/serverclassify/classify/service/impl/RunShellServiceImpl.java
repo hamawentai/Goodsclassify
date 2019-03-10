@@ -1,4 +1,4 @@
-package com.lab.serverclassify.classify.serviceImpl;
+package com.lab.serverclassify.classify.service.impl;
 
 import com.lab.serverclassify.classify.service.RunShellService;
 import com.lab.serverclassify.pojo.dto.ShellCommandsDTO;

@@ -1,8 +1,8 @@
 package com.lab.serverclassify.mongodb.repository;
 
 
-import com.lab.serverclassify.pojo.dos.FolderDO;
-import com.lab.serverclassify.pojo.dos.UserFilesDO;
+import com.lab.serverclassify.pojo.domain.FolderDO;
+import com.lab.serverclassify.pojo.domain.UserFilesDO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;

@@ -1,13 +1,15 @@
 package com.lab.serverclassify.utils;
 
-import java.text.SimpleDateFormat;
+import org.apache.commons.httpclient.util.DateUtil;
+
 import java.util.Date;
 
+/**
+ * @author weixun
+ */
 public class TimeUtils {
 
-    private static SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd|HH_mm_ss_S");
-
     public static String getNowTime() {
-        return format.format(new Date());
+        return DateUtil.formatDate(new Date(), "yyyy-MM-dd|HH_mm_ss_S");
     }
 }
