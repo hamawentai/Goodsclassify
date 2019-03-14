@@ -17,7 +17,7 @@
     </parent>
 
     <modules>
-        <module>server_search</module>
+        <module>server-search</module>
         <module>server-classify</module>
     </modules>
 

@@ -1,6 +1,7 @@
 package com.lab.serverclassify;
 
 
+import com.lab.serverclassify.mongodb.repository.RedistributionRepository;
 import com.lab.serverclassify.mongodb.repository.UserFilesAdvancedRepository;
 import com.lab.serverclassify.mongodb.repository.UserFilesRepository;
 import com.lab.serverclassify.pojo.domain.UserFilesDO;
@@ -26,12 +27,21 @@ public class MongodbTest {
     @Autowired
     private UserFilesRepository repository;
 
+    @Autowired
+    private RedistributionRepository redistributionRepository;
+
     @Test
     public void mongodb() {
         Query query = new Query();
         query.addCriteria(Criteria.where("name").is("jack"));
         UserFilesDO userFilesDO = mongoTemplate.findOne(query, UserFilesDO.class,"file");
         System.out.println(userFilesDO);
+    }
+
+    @Test
+    public void labelSalesRankTest() {
+        System.out.println(redistributionRepository.findAllProvinceSalesRank());
+        System.out.println(redistributionRepository.findAllLabelSalesRank());
     }
 
 }

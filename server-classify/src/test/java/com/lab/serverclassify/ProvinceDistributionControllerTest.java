@@ -35,7 +35,7 @@ public class ProvinceDistributionControllerTest {
 
     @Test
     public void uploadFile() throws Exception {
-        String reslut = mockMvc.perform(MockMvcRequestBuilders.get("/province/label_sales_rank?label=吉林省")
+        String reslut = mockMvc.perform(MockMvcRequestBuilders.get("/province/province_label_rank?province=吉林省&no=5")
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(MockMvcResultMatchers.status().isOk()).
                         andDo(MockMvcResultHandlers.print())
@@ -45,7 +45,7 @@ public class ProvinceDistributionControllerTest {
 
     @Test
     public void findAllProvinceSalesRank() throws Exception {
-        String reslut = mockMvc.perform(MockMvcRequestBuilders.get("/province/sales_rank")
+        String reslut = mockMvc.perform(MockMvcRequestBuilders.get("/province/label_sales_rank")
                 .contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(MockMvcResultMatchers.status().isOk()).
                         andDo(MockMvcResultHandlers.print())

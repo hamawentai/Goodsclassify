@@ -1,15 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5b01e410-c0b6-4a06-a4ad-f098a7ab0ca5" name="Default Changelist" comment="" />
+    <list default="true" id="5b01e410-c0b6-4a06-a4ad-f098a7ab0ca5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/RedistributionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/RedistributionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/Swagger2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/ao/CommoditySearchAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/ao/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/bo/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/config/PageSizeConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/dao/LabelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/domain/Catalog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/domain/Label.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/kafka/Listener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/kafka/config/KafkaConsumerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/kafka/config/KafkaProducerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/myenum/SearchEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/LabelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/RedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/CatalogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/GoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/LabelServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/RedisServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/vo/CommoditySearchVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/vo/LabelVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/vo/ResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/vo/package-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/service/CatalogServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/service/GoodsServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/service/LabelServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/service/impl/HbaseServiceImplTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/test/EunmTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/test/RedisTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server-search/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-classify/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-classify/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/ProvinceDistributionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/ProvinceDistributionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mongodb/repository/RedistributionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mongodb/repository/RedistributionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-classify/src/main/resources/shell/1.sh" beforeDir="false" afterPath="$PROJECT_DIR$/server-classify/src/main/resources/shell/1.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/MongodbTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/MongodbTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/ProvinceDistributionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/ProvinceDistributionControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/ServerSearchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/ServerSearchApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/config/HbaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/config/HBaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/controller/ClassifyResultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/controller/ClassifyResultController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/CatalogDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/dao/CatalogDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/DocSearchDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/GoodsSearchDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/dao/GoodsSearchDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/GoodsUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/dao/GoodsUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/UserVersionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/dao/UserVersionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/document/Doc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/document/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/domain/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/Docs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/GoodsLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/domain/GoodsLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/GoodsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/domain/GoodsUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/UserVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/domain/UserVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/kafka/Listener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/kafka/config/ConsumerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/kafka/config/ConsumerProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/kafka/config/KafkaConsumerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/kafka/config/KafkaProducerConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/kafka/config/ProducerProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/kafka/config/ProducerProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/kafka/controller/HellController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/kafka/controller/ProductorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/kafka/controller/ProductorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/CatalogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/CatalogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/DocSearchService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/GoodsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/GoodsUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/GoodsUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/HbaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/HbaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/UserVersionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/UserVersionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/GoodsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/GoodsUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/GoodsUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/HbaseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/HbaseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/UserVersionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/UserVersionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/util/HBaseDoc.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/util/HBaseDoc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/util/SnowflakeIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/util/SnowflakeIdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/vo/CatalogResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/vo/CatalogResultVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/ServerSearchApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/ServerSearchApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/DocSearchServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/GoodsServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/GoodsUserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/service/GoodsUserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/HbaseServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/src/test/java/com/lab/serversearch/service/HbaseServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/impl/HbaseServiceImplTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/target/classes/META-INF/server_search.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/target/classes/META-INF/server_search.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_search/target/classes/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/server-search/target/classes/static/index.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/server_search/target/" />
     <ignored path="$PROJECT_DIR$/server-classify/target/" />
+    <ignored path="$PROJECT_DIR$/server-search/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -30,110 +130,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/GoodsUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="19" column="69" lean-forward="true" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/LabelService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/RedisService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="678">
-              <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/CatalogService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/controller/SearchController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="57" column="15" lean-forward="true" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/vo/CatalogResultVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/HbaseService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="28" column="19" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/UserVersionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/CatalogDao.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="57" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/util/HBaseDoc.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+            <state relative-caret-position="-60">
+              <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -143,8 +144,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -155,7 +156,32 @@
       <find>commodity</find>
       <find>StartRow</find>
       <find>version</find>
+      <find>ela</find>
+      <find>Pageable</find>
+      <find>scan</find>
+      <find>queryForList</find>
+      <find>SampleEntity</find>
+      <find>elasticsearchTemplate</find>
+      <find>nmap</find>
+      <find>po</find>
+      <find>position</find>
+      <find>position() {</find>
+      <find>map(</find>
+      <find>position(</find>
+      <find>hbase</find>
+      <find>hadoop</find>
+      <find>application/octet-stream</find>
+      <find>userName, version, uploadFilePath, time</find>
+      <find>where username=</find>
+      <find>fis</find>
+      <find>values</find>
     </findStrings>
+    <replaceStrings>
+      <replace>GoodsUser</replace>
+      <replace>esTemplate</replace>
+      <replace>in</replace>
+      <replace>value</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -164,57 +190,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/GoodsSearchDao.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/ao/CommoditySearchAO.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/test/EunmTest.java" />
-        <option value="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/GoodsServiceTest.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/config/PageSizeConfig.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/GoodsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/kafka/config/KafkaConsumerConfig.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/LabelDao.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/vo/LabelVO.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/LabelService.java" />
-        <option value="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/LabelServiceTest.java" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/ServerSearchApplication.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/controller/SearchController.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/document/Doc.java" />
-        <option value="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/impl/HbaseServiceImplTest.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/Swagger2.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/Goods.java" />
-        <option value="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/CatalogServiceTest.java" />
-        <option value="$PROJECT_DIR$/server_search/pom.xml" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/RedisService.java" />
-        <option value="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/test/RedisTest.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/Label.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/Catalog.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/CatalogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/LabelServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/config/HBaseConfig.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/util/HBaseDoc.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/RedisServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/config/CorsConfig.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/GoodsUser.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/UserVersionDao.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/UserVersionServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/UserVersionService.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/util/SnowflakeIdWorker.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/GoodsLabel.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/HbaseService.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/CatalogDao.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/CatalogService.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/ClassifyResultService.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/GoodsUserDao.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/UserVersion.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/GoodsUserService.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/controller/ClassifyResultController.java" />
-        <option value="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/GoodsUserServiceTest.java" />
-        <option value="$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/HbaseServiceTest.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/GoodsUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/vo/CatalogResultVO.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/HbaseServiceImpl.java" />
-        <option value="$PROJECT_DIR$/server_search/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mongodb/repository/UserFilesAdvancedRepository.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/es/reponsitory/ESReponsitory.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/BaseResultFileService.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/serviceImpl/ResultFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server-classify/1.txt" />
+        <option value="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/MappedByteBufferTest.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/config/HBaseConfig.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/config/KafkaConfig.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/properties/HbaseProperties.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/dto/GoodsLabel.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/bo/ResultFileBO.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/bo/ResultFileBo.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/utils/CreateResultFile.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/DownloadResultFileContorller.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/RunShellServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server-classify/pom.xml" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/VersionFile.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/TTest.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/UserUploadLog.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mapper/UserUploadLogMapper.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/UploadFileLogService.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/ResultFileService.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/utils/TimeUtils.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/properties/HdfsProperties.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/UploadTest.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mapper/VersionFileMapper.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/HdaoopClientDemo.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/config/Config.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/DownloadResultFileControllerTest.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/utils/CreateResultFileUtil.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/HDFSFileSystem.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/UploadFileLogServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/UserUploadDataAnalysisController.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/ESCRUDTest.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/utils/EsSearchUtil.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/utils/HbaseUtil.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/ResultFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/DownloadResultFileController.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/RedistributionDO.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/LabelValueDo.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/ProvinceValueDO.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/resources/shell/redistribution.sh" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/resources/shell/1.sh" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mongodb/repository/RedistributionRepository.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/RedistributionService.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/T.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/RedistributionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/MongodbTest.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/ProvinceDistributionController.java" />
+        <option value="$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/ProvinceDistributionControllerTest.java" />
       </list>
     </option>
   </component>
@@ -230,16 +256,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="server_search" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="server-classify" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="server_search" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="server_search" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="server-classify" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -247,200 +268,30 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="764" />
-    <option name="y" value="4" />
-    <option name="width" value="1124" />
-    <option name="height" value="1016" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="ao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="goodsclassify" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Goodsclassify" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="server_search" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="goods-classify" type="b2602c69:ProjectViewProjectNode" />
+              <item name="goods-classify" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,22 +303,40 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552564852245" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../provider" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="/media/weixun/7692FBF992FBBC25/java/JavaProject/SpringCloudLeran" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.lab.server_search.service" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lab.serverclassify.pojo.dto" />
+      <recent name="com.lab.serverclassify.classify.serviceImpl" />
+      <recent name="com.lab.serverclassify.classify.service" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.lab.serverclassify.classify.service.impl" />
+    </key>
   </component>
   <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
     <option name="ruleStates">
       <list>
         <RuleState>
@@ -478,83 +347,84 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.12864865" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ServerSearchApplication">
-    <configuration name="GoodsUserServiceTest.getAllData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="server_search" />
+  <component name="RunManager" selected="JUnit.ProvinceDistributionControllerTest.findAllProvinceSalesRank">
+    <configuration name="DownloadResultFileControllerTest.downloadFilePublic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server-classify" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lab.server_search.service.*" />
+          <option name="PATTERN" value="com.lab.serverclassify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lab.server_search.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lab.server_search.service.GoodsUserServiceTest" />
-      <option name="METHOD_NAME" value="getAllData" />
+      <option name="PACKAGE_NAME" value="com.lab.serverclassify" />
+      <option name="MAIN_CLASS_NAME" value="com.lab.serverclassify.DownloadResultFileControllerTest" />
+      <option name="METHOD_NAME" value="downloadFilePublic" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoodsUserServiceTest.getPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="server_search" />
+    <configuration name="ESCRUDTest.spendTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server-classify" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lab.server_search.service.*" />
+          <option name="PATTERN" value="com.lab.serverclassify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lab.server_search.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lab.server_search.service.GoodsUserServiceTest" />
-      <option name="METHOD_NAME" value="getPage" />
+      <option name="PACKAGE_NAME" value="com.lab.serverclassify" />
+      <option name="MAIN_CLASS_NAME" value="com.lab.serverclassify.ESCRUDTest" />
+      <option name="METHOD_NAME" value="spendTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoodsUserServiceTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="server_search" />
+    <configuration name="MongodbTest.labelSalesRankTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server-classify" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lab.server_search.service.*" />
+          <option name="PATTERN" value="com.lab.serverclassify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lab.server_search.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lab.server_search.service.GoodsUserServiceTest" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.lab.serverclassify" />
+      <option name="MAIN_CLASS_NAME" value="com.lab.serverclassify.MongodbTest" />
+      <option name="METHOD_NAME" value="labelSalesRankTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HbaseServiceTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="server_search" />
+    <configuration name="ProvinceDistributionControllerTest.findAllProvinceSalesRank" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server-classify" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lab.server_search.service.*" />
+          <option name="PATTERN" value="com.lab.serverclassify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lab.server_search.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lab.server_search.service.HbaseServiceTest" />
-      <option name="METHOD_NAME" value="find" />
+      <option name="PACKAGE_NAME" value="com.lab.serverclassify" />
+      <option name="MAIN_CLASS_NAME" value="com.lab.serverclassify.ProvinceDistributionControllerTest" />
+      <option name="METHOD_NAME" value="findAllProvinceSalesRank" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HbaseServiceTest.getByRowKeyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="server_search" />
+    <configuration name="ProvinceDistributionControllerTest.uploadFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="server-classify" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.lab.server_search.service.*" />
+          <option name="PATTERN" value="com.lab.serverclassify.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.lab.server_search.service" />
-      <option name="MAIN_CLASS_NAME" value="com.lab.server_search.service.HbaseServiceTest" />
-      <option name="METHOD_NAME" value="getByRowKeyList" />
+      <option name="PACKAGE_NAME" value="com.lab.serverclassify" />
+      <option name="MAIN_CLASS_NAME" value="com.lab.serverclassify.ProvinceDistributionControllerTest" />
+      <option name="METHOD_NAME" value="uploadFile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -568,19 +438,19 @@
       </method>
     </configuration>
     <configuration name="ServerSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="server_search" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lab.server_search.ServerSearchApplication" />
+      <module name="server-search" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.lab.serversearch.ServerSearchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GoodsUserServiceTest.test" />
-        <item itemvalue="JUnit.HbaseServiceTest.find" />
-        <item itemvalue="JUnit.HbaseServiceTest.getByRowKeyList" />
-        <item itemvalue="JUnit.GoodsUserServiceTest.getAllData" />
-        <item itemvalue="JUnit.GoodsUserServiceTest.getPage" />
+        <item itemvalue="JUnit.ProvinceDistributionControllerTest.findAllProvinceSalesRank" />
+        <item itemvalue="JUnit.ProvinceDistributionControllerTest.uploadFile" />
+        <item itemvalue="JUnit.MongodbTest.labelSalesRankTest" />
+        <item itemvalue="JUnit.ESCRUDTest.spendTime" />
+        <item itemvalue="JUnit.DownloadResultFileControllerTest.downloadFilePublic" />
       </list>
     </recent_temporary>
   </component>
@@ -613,7 +483,18 @@
       <workItem from="1551421943338" duration="10088000" />
       <workItem from="1551658103572" duration="500000" />
       <workItem from="1551687598279" duration="2602000" />
-      <workItem from="1551694093753" duration="1081000" />
+      <workItem from="1551752475895" duration="8931000" />
+      <workItem from="1551777260783" duration="380000" />
+      <workItem from="1551784114670" duration="7586000" />
+      <workItem from="1551838813099" duration="18389000" />
+      <workItem from="1551925155091" duration="25474000" />
+      <workItem from="1552032103128" duration="4649000" />
+      <workItem from="1552179710434" duration="10596000" />
+      <workItem from="1552298594895" duration="3800000" />
+      <workItem from="1552357197396" duration="599000" />
+      <workItem from="1552386944551" duration="9223000" />
+      <workItem from="1552465742385" duration="1346000" />
+      <workItem from="1552558363727" duration="5664000" />
     </task>
     <task id="LOCAL-00001" summary="一级分类查询">
       <created>1551184211230</created>
@@ -629,50 +510,50 @@
       <option name="project" value="LOCAL" />
       <updated>1551275360534</updated>
     </task>
-    <task id="LOCAL-00003" summary="分类结果服务(1.0)">
-      <created>1551694149594</created>
+    <task id="LOCAL-00003" summary="wx 2.0">
+      <created>1552223397369</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1551694149594</updated>
+      <updated>1552223397369</updated>
     </task>
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HbaseServiceTest_getByRowKeyList - 2019.03.01 at 17h 23m 15s.xml">
-      <configuration name="HbaseServiceTest.getByRowKeyList" configurationId="JUnit" />
+    <history-entry file="ProvinceDistributionControllerTest_findAllProvinceSalesRank - 2019.03.10 at 21h 00m 12s.xml">
+      <configuration name="ProvinceDistributionControllerTest.findAllProvinceSalesRank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsUserServiceTest_getPage - 2019.03.01 at 19h 57m 52s.xml">
-      <configuration name="GoodsUserServiceTest.getPage" configurationId="JUnit" />
+    <history-entry file="ProvinceDistributionControllerTest_findAllProvinceSalesRank - 2019.03.10 at 21h 03m 43s.xml">
+      <configuration name="ProvinceDistributionControllerTest.findAllProvinceSalesRank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsUserServiceTest_test - 2019.03.01 at 20h 05m 35s.xml">
-      <configuration name="GoodsUserServiceTest.test" configurationId="JUnit" />
+    <history-entry file="ProvinceDistributionControllerTest_findAllProvinceSalesRank - 2019.03.10 at 21h 04m 27s.xml">
+      <configuration name="ProvinceDistributionControllerTest.findAllProvinceSalesRank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsUserServiceTest_getAllData - 2019.03.01 at 20h 06m 02s.xml">
-      <configuration name="GoodsUserServiceTest.getAllData" configurationId="JUnit" />
+    <history-entry file="MongodbTest_labelSalesRankTest - 2019.03.14 at 18h 33m 53s.xml">
+      <configuration name="MongodbTest.labelSalesRankTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HbaseServiceTest_getByRowKeyList - 2019.03.01 at 20h 09m 09s.xml">
-      <configuration name="HbaseServiceTest.getByRowKeyList" configurationId="JUnit" />
+    <history-entry file="MongodbTest_labelSalesRankTest - 2019.03.14 at 18h 34m 31s.xml">
+      <configuration name="MongodbTest.labelSalesRankTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HbaseServiceTest_getByRowKeyList - 2019.03.01 at 20h 14m 40s.xml">
-      <configuration name="HbaseServiceTest.getByRowKeyList" configurationId="JUnit" />
+    <history-entry file="ProvinceDistributionControllerTest_uploadFile - 2019.03.14 at 19h 39m 02s.xml">
+      <configuration name="ProvinceDistributionControllerTest.uploadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HbaseServiceTest_getByRowKeyList - 2019.03.01 at 20h 17m 43s.xml">
-      <configuration name="HbaseServiceTest.getByRowKeyList" configurationId="JUnit" />
+    <history-entry file="ProvinceDistributionControllerTest_uploadFile - 2019.03.14 at 19h 39m 54s.xml">
+      <configuration name="ProvinceDistributionControllerTest.uploadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HbaseServiceTest_find - 2019.03.01 at 20h 23m 15s.xml">
-      <configuration name="HbaseServiceTest.find" configurationId="JUnit" />
+    <history-entry file="ProvinceDistributionControllerTest_uploadFile - 2019.03.14 at 19h 40m 20s.xml">
+      <configuration name="ProvinceDistributionControllerTest.uploadFile" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HbaseServiceTest_find - 2019.03.01 at 20h 23m 42s.xml">
-      <configuration name="HbaseServiceTest.find" configurationId="JUnit" />
+    <history-entry file="ProvinceDistributionControllerTest_findAllProvinceSalesRank - 2019.03.14 at 19h 42m 50s.xml">
+      <configuration name="ProvinceDistributionControllerTest.findAllProvinceSalesRank" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GoodsUserServiceTest_test - 2019.03.04 at 16h 38m 28s.xml">
-      <configuration name="GoodsUserServiceTest.test" configurationId="JUnit" />
+    <history-entry file="ProvinceDistributionControllerTest_findAllProvinceSalesRank - 2019.03.14 at 19h 44m 48s.xml">
+      <configuration name="ProvinceDistributionControllerTest.findAllProvinceSalesRank" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45465000" />
+    <option name="totallyTimeSpent" value="151587000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -684,9 +565,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1039" extended-state="6" />
+    <frame x="0" y="0" width="1920" height="1026" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49947754" visible="true" weight="0.19978632" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49947754" visible="true" weight="0.2028754" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -695,9 +577,9 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" sideWeight="0.5005225" side_tool="true" weight="0.21588486" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32912722" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.378022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39852786" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3280543" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22058824" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49660632" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3291536" />
@@ -705,19 +587,21 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32982087" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32881" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32918552" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32982087" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32747254" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32692307" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.23190045" />
+      <window_info anchor="bottom" id="Duplicate detector" order="16" weight="0.59841627" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.32959402" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24973376" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.22949947" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32959402" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3290735" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32959402" />
     </layout>
   </component>
@@ -728,467 +612,507 @@
     <MESSAGE value="商品搜索服务(1.0)" />
     <MESSAGE value="一级分类查询" />
     <MESSAGE value="缓存功能(1.0)" />
-    <MESSAGE value="分类结果服务(1.0)" />
-    <option name="LAST_COMMIT_MESSAGE" value="分类结果服务(1.0)" />
+    <MESSAGE value="wx 2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="wx 2.0" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/LabelServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/HDFSFileSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="253">
+          <caret line="71" column="75" lean-forward="true" selection-start-line="71" selection-start-column="75" selection-end-line="71" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/CatalogServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/UploadFileLogService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        <state relative-caret-position="266">
+          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mapper/UserUploadLogMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/GoodsServiceTest.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.0.8.RELEASE/spring-data-commons-2.0.8.RELEASE-sources.jar!/org/springframework/data/domain/Slice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="196">
+          <caret line="65" column="12" selection-start-line="65" selection-start-column="12" selection-end-line="65" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/pom.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-elasticsearch/3.0.8.RELEASE/spring-data-elasticsearch-3.0.8.RELEASE-sources.jar!/org/springframework/data/elasticsearch/core/ElasticsearchTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="53" column="44" lean-forward="true" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+        <state relative-caret-position="234">
+          <caret line="788" column="63" lean-forward="true" selection-start-line="787" selection-start-column="8" selection-end-line="788" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/LabelServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/RedisServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="25" column="55" selection-start-line="25" selection-start-column="55" selection-end-line="25" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="95">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/RedisServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/GoodsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
-            <element signature="e#693#694#0" expanded="true" />
-            <element signature="e#772#773#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1083#1084#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="855">
+          <caret line="56" selection-start-line="18" selection-end-line="56" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.4.0/hbase-client-1.4.0.jar!/org/apache/hadoop/hbase/client/Scan.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.3.RELEASE/spring-boot-autoconfigure-2.0.3.RELEASE.jar!/org/springframework/boot/autoconfigure/data/elasticsearch/ElasticsearchAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="359" column="32" selection-start-line="359" selection-start-column="24" selection-end-line="359" selection-end-column="32" />
-          <folding>
-            <element signature="e#16351#16352#0" expanded="true" />
-            <element signature="e#16387#16388#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="399">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/test/RedisTest.java">
+    <entry file="file://$PROJECT_DIR$/server-search/src/main/java/com/lab/serversearch/service/impl/GoodsUserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="348">
+          <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/config/CorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.4.0/hbase-client-1.4.0.jar!/org/apache/hadoop/hbase/client/HTablePool.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2880">
-          <caret line="150" column="10" selection-start-line="150" selection-start-column="10" selection-end-line="150" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.6.10/elasticsearch-5.6.10.jar!/org/elasticsearch/index/query/QueryBuilders.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/UserVersionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#663#664#0" expanded="true" />
-            <element signature="e#692#693#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/util/RowKeyUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/util/SnowflakeIdWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/GoodsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="38" column="67" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.4.0/hbase-client-1.4.0.jar!/org/apache/hadoop/hbase/client/HTableInterface.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-hadoop-hbase/2.5.0.RELEASE/spring-data-hadoop-hbase-2.5.0.RELEASE.jar!/org/springframework/data/hadoop/hbase/TableCallback.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hbase/hbase-client/1.4.0/hbase-client-1.4.0.jar!/org/apache/hadoop/hbase/client/Table.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/LabelDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/GoodsUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-hadoop-hbase/2.5.0.RELEASE/spring-data-hadoop-hbase-2.5.0.RELEASE.jar!/org/springframework/data/hadoop/hbase/HbaseTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/Label.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/CatalogServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/ClassifyResultService.java" />
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/GoodsSearchDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/UserVersionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/GoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/Catalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/Goods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/GoodsLabel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/domain/UserVersion.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/ResultFileService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bob_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/ESCRUDTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="79" column="49" lean-forward="true" selection-start-line="79" selection-start-column="49" selection-end-line="79" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/GoodsUserDao.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/ResultFileServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="1292">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/ao/CommoditySearchAO.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/utils/HbaseUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/ServerSearchApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/config/HBaseConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="21" column="58" lean-forward="true" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/HbaseServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="40" column="59" selection-start-line="40" selection-start-column="59" selection-end-line="40" selection-end-column="59" />
+        <state relative-caret-position="266">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/test/java/com/lab/server_search/service/GoodsUserServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/utils/CreateResultFileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2496">
-          <caret line="131" column="60" selection-start-line="131" selection-start-column="53" selection-end-line="131" selection-end-column="66" />
+        <state relative-caret-position="209">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/HbaseServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/UploadFileLogServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/impl/GoodsUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="45" />
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="35" />
-          <caret line="47" column="63" selection-start-line="47" selection-start-column="53" selection-end-line="47" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getAllUserGoods#0;class#GoodsUserServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/controller/ClassifyResultController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+        <state relative-caret-position="228">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/DownloadResultFileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/vo/CatalogResultVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        <state relative-caret-position="486">
+          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/util/HBaseDoc.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mongodb/repository/UserFilesRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="133">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/controller/SearchController.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/utils/EsSearchUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="57" column="15" lean-forward="true" selection-start-line="57" selection-start-column="15" selection-end-line="57" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/CatalogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/GoodsUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="19" column="69" lean-forward="true" selection-start-line="19" selection-start-column="69" selection-end-line="19" selection-end-column="69" />
+        <state relative-caret-position="361">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/LabelService.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/DownloadResultFileControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="228">
+          <caret line="36" column="70" lean-forward="true" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-mongodb/2.0.8.RELEASE/spring-data-mongodb-2.0.8.RELEASE-sources.jar!/org/springframework/data/mongodb/core/query/BasicQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="83" column="40" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/FolderDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/UserFilesDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/bson/3.6.4/bson-3.6.4-sources.jar!/org/bson/Document.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="65" column="36" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="36" />
+          <folding>
+            <element signature="e#1784#1785#0" expanded="true" />
+            <element signature="e#1851#1852#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4.jar!/com/mongodb/client/MongoCollection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/bson/3.6.4/bson-3.6.4-sources.jar!/org/bson/conversions/Bson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE.jar!/org/springframework/test/web/servlet/request/MockMvcRequestBuilders.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/openjdk-7-fcs-src-b147-27_jun_2011.zip!/openjdk/jdk/src/share/classes/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.0.7.RELEASE/spring-test-5.0.7.RELEASE.jar!/org/springframework/test/web/servlet/request/MockHttpServletRequestBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+          <folding>
+            <element signature="e#3394#3395#0" expanded="true" />
+            <element signature="e#3438#3439#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE-sources.jar!/org/springframework/web/util/UrlPathHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mongodb/mongodb-driver/3.6.4/mongodb-driver-3.6.4-sources.jar!/com/mongodb/client/MongoCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="287" column="35" selection-start-line="287" selection-start-column="35" selection-end-line="287" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/resources/shell/redistribution.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="65" lean-forward="true" selection-start-line="2" selection-start-column="65" selection-end-line="2" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/resources/shell/1.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mongodb/repository/UserFilesAdvancedRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/RedistributionDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/RedisService.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/UserUploadDataAnalysisController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+        <state relative-caret-position="209">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/ProvinceValueDO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/componet/DataAnalysisConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar!/java/util/List.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/Downloads/openjdk-7-fcs-src-b147-27_jun_2011.zip!/openjdk/jdk/src/share/classes/java/util/Comparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-226">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/mongodb/repository/RedistributionRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="78" column="51" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/HbaseService.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/T.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="19" />
+        <state relative-caret-position="114">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/kafka/MyKafkaProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/MongodbTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="44" column="5" lean-forward="true" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/RedistributionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/service/UserVersionService.java">
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/service/impl/RedistributionServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_search/src/main/java/com/lab/server_search/dao/CatalogDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="57" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="57" />
+        <state relative-caret-position="205">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/test/java/com/lab/serverclassify/ProvinceDistributionControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="47" column="94" selection-start-line="47" selection-start-column="94" selection-end-line="47" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/classify/contorller/ProvinceDistributionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server-classify/src/main/java/com/lab/serverclassify/pojo/domain/LabelValueDo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>goods-classify</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

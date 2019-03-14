@@ -8,18 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="goods-classify" />
         <module name="server-classify" />
+        <module name="server-search" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="goodsclassify" target="1.8" />
-      <module name="server_search" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="goods-classify" options="-parameters" />
       <module name="server-classify" options="-parameters" />
-      <module name="server_search" options="-parameters" />
+      <module name="server-search" options="-parameters" />
     </option>
   </component>
 </project>

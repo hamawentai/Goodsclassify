@@ -23,8 +23,21 @@ public class RedistributionRepository {
     @Autowired
     private MongoOperations mongoOperations;
 
-    public List<LabelValueDo> findByLabel(String lableName) {
-        Document queryDoc = new Document("province", lableName);
+    /**
+     * 根据省份名返回各个省的各种分类的销量排行
+     * @param province 省份名
+     * @return 各个标签的销量排行
+     *
+     * 	"province" : "河北省",
+     * 	"detail" : [
+     *                {
+     * 			"index" : "0",
+     * 			"label" : "图书杂志",
+     * 			"value" : "658807104"
+     *        },....]
+     */
+    public List<LabelValueDo> findLabelRankByProvince(String province) {
+        Document queryDoc = new Document("province", province);
         List<LabelValueDo> list = new ArrayList<>();
         MongoCollection<Document> collection = mongoOperations.getCollection("redistribution");
         FindIterable<Document> documents = collection.find(queryDoc);
@@ -39,8 +52,32 @@ public class RedistributionRepository {
         return list;
     }
 
+    /**
+     * 获得省份的销量排行
+     * @return 省份-销量
+     *
+     * {
+     * 	"_id" : ObjectId("5c8a28341021ec191365e244"),
+     * 	"province" : "湖北省",
+     * 	"value" : "1938062390"
+     * }...
+     */
     public List<ProvinceValueDO> findAllProvinceSalesRank() {
         return mongoOperations.findAll(ProvinceValueDO.class, "province_rank");
+    }
+
+    /**
+     *  获得全国商品类型的销量排行
+     * @return 销量排行
+     *
+     * {
+     * 	"_id" : ObjectId("5c8a1a611021ec14d16c2b7e"),
+     * 	"label" : "图书杂志",
+     * 	"value" : "8869582303"
+     * }...
+     */
+    public List<LabelValueDo> findAllLabelSalesRank() {
+        return mongoOperations.findAll(LabelValueDo.class, "label_rank");
     }
 
 }
